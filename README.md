@@ -1,43 +1,109 @@
-# Namma Shasane - Preserving Karnataka's Heritage
+# 🪨 Namma Shasane (ನಮ್ಮ ಶಾಸನ)
+### *"Turning Old Stones into Talking History"*
 
-Namma Shasane is a mobile application dedicated to exploring and preserving the ancient inscriptions and historical sites of Karnataka. Using modern technology like AI and Google Maps integration, it bridges the gap between history and the digital age.
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Android-brightgreen?style=for-the-badge&logo=android"/>
+  <img src="https://img.shields.io/badge/Language-Kotlin-purple?style=for-the-badge&logo=kotlin"/>
+  <img src="https://img.shields.io/badge/AI-Gemini-blue?style=for-the-badge&logo=google"/>
+  <img src="https://img.shields.io/badge/Maps-Google%20Maps-red?style=for-the-badge&logo=googlemaps"/>
+  <img src="https://img.shields.io/badge/UI-Jetpack%20Compose-orange?style=for-the-badge&logo=jetpackcompose"/>
+</p>
 
-## Features
+---
 
-- **Heritage Map**: Interactive map showing historical places (Hampi, Badami, Halebidu, etc.) with coordinates and directions via Google Maps.
-- **AI-Powered Inscription Stories**: Discover the history behind ancient stones with AI-generated explanations and Text-to-Speech narration.
-- **Visual Exploration**: High-quality photos of heritage sites and inscriptions.
-- **Modern Authentication**: Secure login with Email or Google Account.
-- **Profile Management**: Track your journey, scanned stones, and visited sites.
-- **Inscription Scanner**: Tools for scanning and analyzing ancient inscriptions (CameraX integration).
+## 📖 The Problem We're Solving
 
-## Tech Stack
+Karnataka holds the **highest number of stone inscriptions (Shasanas) in all of India** —
+etched on temple walls, village boundary stones, and ancient ruins across the state.
 
-- **Kotlin** & **Jetpack Compose** for a modern UI.
-- **Google Maps SDK** for heritage site mapping.
-- **Google Generative AI (Gemini)** for historical analysis.
-- **Room Database** for local data persistence.
-- **Coil** for efficient image loading.
-- **Material 3** for contemporary design.
+These inscriptions are **primary historical documents** — recording land gifts, royal decrees,
+heroic sacrifices, and the daily life of civilizations that shaped modern India.
 
-## Getting Started
+Yet today, they are:
+- 🎨 **Painted over** by people who don't know their significance
+- 🔨 **Demolished** during construction and renovation
+- 🌿 **Forgotten** in overgrown fields and neglected temples
+- 📦 **Lost forever** because no one documented them in time
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/charan764/Namma-Shasane.git
-   ```
-2. **Setup API Keys**:
-   - Add your Gemini AI API Key to `local.properties` as `GEMINI_API_KEY=your_key_here`.
-   - Setup Google Cloud Project for Google Sign-In and Maps.
-3. **Build & Run**: Open the project in Android Studio and run it on an emulator or physical device.
+**Namma Shasane** changes that.
 
-## Security
+---
 
-This project follows security best practices by:
-- Using a `.gitignore` to prevent leaking local configuration and secrets.
-- Keeping sensitive API keys out of version control (placeholders are used in the source).
-- Implementing secure Google Sign-In.
+## 💡 What is Namma Shasane?
 
-## License
+Namma Shasane is a **GenAI-powered Android application** that acts as a digital bridge
+between Karnataka's citizens and their 2000-year-old heritage.
 
-This project is for educational and heritage preservation purposes.
+It empowers anyone — a student, a tourist, a farmer — to **find, photograph, understand,
+and protect** ancient stone inscriptions using just their smartphone.
+
+> *"That old rock in your village? It might be a royal decree from the Rashtrakutas.
+> Namma Shasane will tell you its story."*
+
+---
+
+## ✨ Core Features
+
+### 🗺️ Heritage Map
+An interactive map powered by **Google Maps SDK** showing documented inscriptions
+and heritage sites across Karnataka — including Hampi, Badami, Halebidu, Belur,
+and hundreds of lesser-known village sites. Get directions, distances, and
+site previews — all from the app.
+
+### 🤖 AI-Powered Inscription Stories
+Powered by **Google Gemini AI**, the app analyzes inscription photos and generates
+rich historical narratives in plain language:
+> *"This stone, dating to 1150 CE, records a land grant by King Vikramaditya VI
+> of the Western Chalukyas to a local Shiva temple. The gift included 10 acres
+> of fertile land and was witnessed by village elders."*
+
+Complete with **Text-to-Speech narration** — history literally speaks to you.
+
+### 📸 Inscription Scanner
+Using **CameraX integration**, users can photograph any stone inscription they
+encounter. The image is processed by Gemini AI to identify the script (Kannada,
+Sanskrit, Tamil, Telugu), estimate the dynasty and era, and generate a
+translation and historical context.
+
+### 🚨 Preservation Alert System
+Found an inscription being damaged or painted over? Report it instantly with
+photo evidence and GPS coordinates. Alerts are logged and can be shared with
+heritage authorities.
+
+### 🏛️ Heritage Trail
+Follow curated GPS trails through clusters of inscriptions — turning a village
+walk into a guided history tour. Each trail connects inscriptions into a
+coherent historical narrative.
+
+### 🔐 Secure Authentication
+- Email/Password login
+- Google Sign-In (One Tap)
+- Secure session management
+
+### 👤 Explorer Profile
+Track your personal heritage journey:
+- Number of inscriptions scanned
+- Heritage sites visited
+- Preservation alerts filed
+- Badges earned for contributions
+
+---
+
+## 🛠️ Tech Stack
+
+| Component | Technology | Purpose |
+|-----------|-----------|---------|
+| Language | Kotlin | Primary development language |
+| UI Framework | Jetpack Compose + Material 3 | Modern declarative UI |
+| AI Engine | Google Gemini API | Inscription analysis & story generation |
+| Maps | Google Maps SDK | Heritage site mapping & trails |
+| Camera | CameraX | Inscription scanning |
+| Database | Room DB | Local inscription & site storage |
+| Image Loading | Coil | Efficient photo rendering |
+| Auth | Firebase Auth + Google Sign-In | Secure user authentication |
+| TTS | Android TextToSpeech API | Audio narration of inscriptions |
+| Architecture | MVVM + Clean Architecture | Scalable, maintainable codebase |
+
+---
+
+## 📂 Project Structure
